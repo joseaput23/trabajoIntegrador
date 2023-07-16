@@ -1,0 +1,68 @@
+* {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    font-style: italic;
+}
+:root {
+    --color_primary:  rgb(88, 93, 253);
+    --color_secondary: grey;        
+}
+.title_page {
+    font: sans-serif;
+    margin: 1rem;
+    background-image: url(../multimedia/imagenes/complejoescolar.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30vh;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+    .nav__menu {
+         width: 100%;
+        margin: 1rem;
+        background-color: var(--color_primary);
+        display: flex;
+        justify-content: space-evenly;
+        padding: 1rem;
+        border-radius: 5px;
+    }
+    
+    .nav__list {
+        color : rgb(244, 245, 212);
+        display: flex;
+        font-size: 20px;
+        list-style: none;
+        gap: 2rem;
+    }
+/* .section_1 { */
+.title_sec {
+    display: block;
+    text-align: center;
+   }
+
+.info {
+    padding:  2,5%;
+    display: flex;
+    align-items: center; 
+}
+ 
+.info img {
+        margin: 2rem; 
+}
+      
+.foot-container {
+        display: flex;
+        background-color: var(--color_secondary);
+        margin: 1rem;
+      }
+      .foot-item {
+        width: 33%;
+        margin: 10px;
+        text-align: center;
+        line-height: 100px;
+        font-size: 50px;
+      }
