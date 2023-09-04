@@ -2,11 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Una breve descripción de la página">
+    <meta name="keywords" content="HTML5, meta, etiqueta, tutorial">
+    <meta name="author" content="jose Aput">
+    <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./estilo/estilos.css">
+    <link rel="stylesheet" href="./estilo/styles.css">
 </head>
 <body>
     <header>
@@ -27,7 +31,7 @@
     </header>
     <main>
         <section class="section">
-            <div id="section_1">
+            <div id="section_info">
                 <div class="title_sec">
                     <h2>Quienes somos </h2>
                 </div>
@@ -47,7 +51,7 @@
                 </div>
             </div>
     
-            <div id="section_2">
+            <div id="section_detalle">
                 <div class="title_sec">
                     <h2>¿Porque Elegirnos? </h2>
                 </div>
@@ -63,7 +67,7 @@
                 </div>
             </div>
             
-            <div id="section_3">
+            <div id="section_propuesta">
                 <div>
                     <div class="title_sec">
                         <h2>Propuesta Educativa </h2>
@@ -118,7 +122,7 @@
                     </div>
                 </div>
             </div>    
-            <div id="section_4">
+            <div id="section_news">
                 <div class="u_noticias">
                     <div class="div1">
                         <img class="un_logo" src="./multimedia/imagenes/logo_ultimas.jpg" alt="">                
@@ -142,27 +146,30 @@
                 </div>
                 </div>
             </div>    
-            <div id="section_5">
+            <div id="section_contacto">
                 <div class="container mt-5">
                     <div class="row justify-content-center">
                       <div class="col-md-6">
                         <h2 class="mb-4">Formulario de Contacto</h2>
-                        <form>
-                          <div class="form-group">
-                            <label for="nombre">Nombre:</label>
-                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese Nombre" required>
-                           </div>
-                           <div class="form-group">
-                            <label for="email">Email:</label>
-                            <input type="email" class="form-control" id="email" name="email" placeholder="Ingrese Mail" required>
-                          </div>
-                          <div class="form-group">
-                             <label for="mensaje">Mensaje:</label>
-                             <textarea class="form-control" id="mensaje" name="mensaje" rows="5" placeholder="Ingrese el Mensaje" required></textarea>
-                          </div>
-                          <button type="submit" class="btn btn-primary">Enviar</button>
-                       </form>
-                  </div>
+                         <form action="https://formsubmit.co/joseaput@gmail.com" method="POST">
+                            <div class="form-group">
+                               <label for="nombre">Nombre:</label>
+                                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese Nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Ingrese Mail" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="mensaje">Mensaje:</label>
+                                <textarea class="form-control" id="mensaje" name="mensaje" rows="5" placeholder="Ingrese el Mensaje"
+                                    required></textarea>
+                             </div>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                            <input type="hidden" name="_next" value=" http://127.0.0.1:5500/">
+                            <input type="hidden" name="_captcha" value=" false">
+                         </form> 
+                     </div>
                     </div>
                 </div>
             </div>        
